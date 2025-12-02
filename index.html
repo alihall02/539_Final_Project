@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aliyah 539 Final</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<main>
+<body>
+  <div class="navigation">
+  <nav>
+<a href="Overview.html">
+  <button>View my Reflection</button>
+</a>
+  </nav>
+  </div>
+  <div class="header">
+    <h1 class="main-title" id="typewriter">Aliyah Hall</h1>
+    <img src="Images/IMG_0196.PNG" alt="Doodle illustration of Aliyah Hall" class="main-img">
+    <p class="main-subtitle">UX Designer • Doodle Enthusiast</p>
+  </div>
+    <section class="mini-intro">
+        <p>Hello! I'm Aliyah, a UX design student at the University of Michigan. This portfolio is a collection of what I've learned during my first semester as a grad student.</p>
+    </section>>
+      <ul class="bento-grid">
+        <li class="projects"><a href="Overview.html">Reflection</a></li>
+        <li class="resume"><a href="https://docs.google.com/document/d/1w5ftsmNc7BMsJpVOBEv-xW8AQlIedLtQSCdF50hxtlg/edit?usp=sharing">Resume</a></li>
+        <li class="about"><a href="about.html">About Me</a></li>
+        <li class="contacts"><a href="#contact">Contact</a></li>
+      </ul>
+
+    <section id="contact" class="contact">
+      <h2>Lets Chat</h2>
+      <p>Email: Alihall@umich.edu</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Aliyah Hall</p>
+  </footer>
+  <script>
+    // code refrenced from https://www.w3schools.com/howto/howto_js_typewriter.asp
+  function typeWriterEffect(element, text, speed = 90) {
+    element.textContent = "";
+    let i = 0;
+    function type() {
+      if (i < text.length) {
+        element.textContent += text.charAt(i);
+        i++;
+        setTimeout(type, speed);
+      }
+    }
+    type();
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const h1 = document.getElementById("typewriter");
+    const fullText = h1.textContent.trim();
+    typeWriterEffect(h1, fullText, 90);
+  });
+</script>
+
+</body>
+</html>

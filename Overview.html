@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Semester Reflection</title>
+  <link rel="stylesheet" href="CSS/style.css" />
+</head>
+<body>
+
+  <nav class="mobile-nav">
+    <h2 class="nav-logo">Aliyah</h2>
+    <button class="hamburger" id="hamburger-btn">☰</button>
+
+    <ul class="mobile-menu" id="mobile-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Overview.html" class="active">Reflection</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-hero">
+    <h1>Reflection</h1>
+    <p class="page-sub">A look into what I learned during my first semester as a UMich UX graduate student.</p>
+  </header>
+
+  <main>
+
+    <section class="overview-list">
+      <ul class="overview-grid">
+
+        <li class="class-card">
+              <img src="Images/pencil.jpg" alt="Pencil Doodle" />
+            <div class="class-name">
+              <h2>SI 500 — Problem Solving with People, Information, & Technology</h2>
+              <p class="class-desc">
+                In SI 500, I learned how to plan and conduct user interviews, analyze qualitative data, 
+                and translate messy notes into clear insights. This course helped me build a strong foundation 
+                in research methods and user-centered thinking.
+              </p>
+              <p class="class-role">Skills: interviewing, affinity mapping, insight generation</p>
+            </div>
+        </li>
+
+        <li class="class-card">
+              <img src="Images/Python_icon.png" alt="Python logo" />
+            <div class="class-name">
+              <h2>SI 506 — Programming I</h2>
+              <p class="class-desc">
+                SI 506 introduced me to Python by focusing on writing clean, efficient code. I worked on 
+                data transformations, dictionary-based structures, and automation logic. This course strengthened 
+                the technical skills that support my UX workflow.
+              </p>
+              <p class="class-role">Skills: Python, data structures, automation, problem-solving</p>
+            </div>
+        </li>
+
+        <li class="class-card">
+              <img src="Images/html-js-css-icon-style-vector.jpg" alt="HTML, CSS, and JavaScript icons on a sheet of paper" />
+            <div class="class-name">
+              <h2>SI 539 — Web Design: Responsiveness and Accessibility</h2>
+              <p class="class-desc">
+                In SI 539, I learned how to build accessible and semantic websites using HTML, CSS, and JavaScript. 
+                I created responsive layouts, practiced clean structure, and developed a stronger understanding 
+                of inclusive web design principles.
+              </p>
+              <p class="class-role">Skills: HTML, CSS, JavaScript, responsive design, accessibility</p>
+            </div>
+        </li>
+        <li class="class-card">
+              <img src="Images/book.jpg" alt="A doodle of a book" />
+            <div class="class-name">
+              <h2>SI 588 — Foundations of UX</h2>
+              <p class="class-desc">
+                SI 588 introduced core UX frameworks, heuristics, and design principles. I explored how good UX 
+                supports user goals, reduces friction, and creates meaningful experiences. This course tied 
+                together theory and hands-on practice.
+              </p>
+              <p class="class-role">Skills: UX heuristics, sketching, wireframing, evaluating usability</p>
+            </div>
+        </li>
+
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Let's Chat</h2>
+      <p>Email: Alihall@umich.edu</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Aliyah Hall</p>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger-btn');
+    const menu = document.getElementById('mobile-menu');
+    hamburger && hamburger.addEventListener('click', () => menu.classList.toggle('open'));
+  </script>
+
+</body>
+</html>
