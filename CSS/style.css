@@ -9,6 +9,22 @@ html, body {
     linear-gradient(90deg, rgba(0,0,0,0.06) 1px, transparent 1px);
     margin: 0%;
 }
+.skip a {
+    position: absolute;
+    top: -65px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+}
+.skip a:focus {
+    top: 15px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+:focus {
+    outline: 5px dashed #007BFF;
+}
 
 .header {
   text-align: center;
